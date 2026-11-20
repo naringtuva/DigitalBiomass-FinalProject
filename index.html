@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGITAL BIOMASS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- allt ritas på den här ritytan (canvas) -->
+  <canvas id="world"></canvas>
+
+  <!-- en genomskinlig canvas ovanpå används bara i debug-läget (D) -->
+  <canvas id="debug-canvas"></canvas>
+
+  <!-- kameran. den syns inte om man inte trycker v i debug mode -->
+  <video id="webcam" playsinline muted></video>
+
+  <!-- startskärmen. den ligger ovanpå cellerna tills man klickar på knappen -->
+  <div id="intro">
+    <h1>DIGITAL BIOMASS</h1>
+    <p>ETT ARTIFICIELLT EKOSYSTEM</p>
+    <button id="enter-button">[ ENTER ]</button>
+  </div>
+
+  <!-- en liten prick i hörnet som visar om kameran fungerar -->
+  <div id="tracking-indicator"></div>
+
+  <!-- text för debug-läget -->
+  <div id="debug-panel"></div>
+
+  <!-- lämna alltid script längst ner -->
+  <script src="tracking.js"></script>
+  <script src="interaktioner.js"></script>
+  <script src="celler.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
